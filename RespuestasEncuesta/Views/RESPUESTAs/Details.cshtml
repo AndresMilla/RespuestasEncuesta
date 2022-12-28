@@ -1,0 +1,66 @@
+﻿@model RespuestasEncuesta.Models.RESPUESTA
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>RESPUESTA</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.respuesta1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.respuesta1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.respuesta2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.respuesta2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.respuesta3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.respuesta3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.respuesta4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.respuesta4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.respuesta5)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.respuesta5)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PREGUNTA.pregunta1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PREGUNTA.pregunta1)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdRespuestas }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
